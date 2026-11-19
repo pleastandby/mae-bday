@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FAF7F0;
+    color: #332F2C;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF7F0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E1D9EB;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #CFBFDF;
+  }
+}
+
+/* Washi tape visual detail for scrapbooking aesthetic */
+.washi-tape {
+  position: absolute;
+  height: 22px;
+  width: 90px;
+  background: rgba(244, 232, 184, 0.65);
+  backdrop-filter: blur(2px);
+  border-left: 2px dashed rgba(212, 179, 76, 0.4);
+  border-right: 2px dashed rgba(212, 179, 76, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+/* Gentle paper texture overlay */
+.paper-texture {
+  background-color: #FAF7F0;
+  background-image: radial-gradient(rgba(180, 160, 140, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Subtle glow for stars and celebration elements */
+.soft-glow {
+  filter: drop-shadow(0 0 12px rgba(230, 207, 130, 0.45));
+}
